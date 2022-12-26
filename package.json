@@ -1,0 +1,12 @@
+{
+  "name": "wp1111_HW9_deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd frontend && yarn start",
+    "server": "cd backend && yarn server"
+  },
+  "repository": "https://github.com/TsaiAmy/wp1111_HW9_deploy.git",
+  "author": "Tsai Amy <amy19651965@gmail.com>"
+}
