@@ -12,5 +12,5 @@
     "deploy": "cd backend && yarn deploy"
   },
   "repository": "https://github.com/TsaiAmy/wp1111_HW9_deploy.git",
-  "author": "Tsai Amy <amy19651965@gmail.com>"
+  "author": "Tsai Amy"
 }
