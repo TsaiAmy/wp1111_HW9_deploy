@@ -3,13 +3,14 @@ import cors from 'cors';
 import db from './db';
 import routes from './routes';
 import bodyParser from 'body-parser'
+import path from 'path'
 
-db.connect();
+
 
 const app = express();
 
 
-if(process.env.NODE_ENV === 'development') {
+if(process.env.NODE_ENV !== 'production') {
     app.use(cors());
 }
 
@@ -25,7 +26,7 @@ if(process.env.NODE_ENV === "production") {
         res.sendFile(path.join(__dirname, "../frontend", "build", "index.html"));
     })
 }
-
+db.connect();
 const port = process.env.PORT || 4000;
 
 // app.get('/', (req, res) => {
